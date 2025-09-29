@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Linked List Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Linked List Visualizer</h1>
+
+      <div class="controls">
+        <input type="number" id="value" placeholder="Value" />
+        <input type="number" id="index" placeholder="Index" />
+        <button onclick="addFirst()">Add First</button>
+        <button onclick="addLast()">Add Last</button>
+        <button onclick="addAtIndex()">Add at Index</button>
+        <button onclick="removeFirst()">Remove First</button>
+        <button onclick="removeLast()">Remove Last</button>
+        <button onclick="reverse()">Reverse</button>
+        <button onclick="clearList()">Clear</button>
+      </div>
+
+      <div class="visualization" id="viz">
+        <div class="empty">Empty list - add some nodes!</div>
+      </div>
+
+      <div class="info">
+        Size: <span id="size">0</span> | Head: <span id="head">null</span> |
+        Tail: <span id="tail">null</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
